@@ -21,13 +21,13 @@ class SecretKey:
 
 		if key_file is not None:
 			self.load(key_file)
-
-		if self.__key_type == KeyType.ROM:
-			self.__data_key, self.__kernel_key = self.__gen_rom_key(self.__key_dims)
-		elif self.__key_type == KeyType.SHUFFLE:
-			self.__data_key, self.__kernel_key = self.__gen_shuffle_key(self.__key_dims)
-		elif self.__key_type == KeyType.FLIP:
-			self.__data_key, self.__kernel_key = self.__gen_flip_key(self.__key_dims)
+		else:
+			if self.__key_type == KeyType.ROM:
+				self.__data_key, self.__kernel_key = self.__gen_rom_key(self.__key_dims)
+			elif self.__key_type == KeyType.SHUFFLE:
+				self.__data_key, self.__kernel_key = self.__gen_shuffle_key(self.__key_dims)
+			elif self.__key_type == KeyType.FLIP:
+				self.__data_key, self.__kernel_key = self.__gen_flip_key(self.__key_dims)
 					
 	def load(self, key_file:str):
 		with open(key_file, "rb") as f:
