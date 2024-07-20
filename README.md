@@ -1,11 +1,12 @@
-# Speech privacy-preserving methods using secret key for convolutional neural network models and their robustness evaluation
+# SecretKeyVoicePrivacyPreserving-CNN
+<div align="center">
+Speech privacy-preserving methods using secret key for convolutional neural network models and their robustness evaluation
 
+[Paper]  [[Cite]](https://github.com/kiyalab-tmu/SecretKeyVoicePrivacyPreserving-CNN/edit/main/README.md#citation)</p>
+</div>
 
 # Abstract
 
-
-
-# SecretKeyVoicePrivacyPreserving-CNN
 
 ## Examples
 ### 1. Encryption of audio signals (when using pytorch's Dataset & Dataloader)
