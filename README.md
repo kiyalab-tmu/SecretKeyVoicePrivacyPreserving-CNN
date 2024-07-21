@@ -1,8 +1,6 @@
-# SecretKeyVoicePrivacyPreserving-CNN
+# Speech privacy-preserving methods using secret key for convolutional neural network models and their robustness evaluation
 <div align="center">
-Speech privacy-preserving methods using secret key for convolutional neural network models and their robustness evaluation
-
-[Paper]  [[Cite]](https://github.com/kiyalab-tmu/SecretKeyVoicePrivacyPreserving-CNN/edit/main/README.md#citation)</p>
+<p> [Paper]  [[Cite]](https://github.com/kiyalab-tmu/SecretKeyVoicePrivacyPreserving-CNN/edit/main/README.md#citation) </p>
 </div>
 
 # Abstract
