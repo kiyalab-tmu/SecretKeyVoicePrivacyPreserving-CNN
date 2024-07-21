@@ -6,7 +6,13 @@ Speech privacy-preserving methods using secret key for convolutional neural netw
 </div>
 
 # Abstract
-
+In this paper, we propose privacy-preserving methods with a secret key for convolutional neural network (CNN)-based models in speech processing tasks. 
+In environments where untrusted third parties, like cloud servers, provide CNN-based systems, ensuring the privacy of speech queries becomes essential. 
+This paper proposes encryption methods for speech queries using secret keys and a model structure that allows for encrypted queries to be accepted without decryption.
+Our approach introduces three types of secret keys: Shuffling, Flipping, and random orthogonal matrix (ROM).
+In experiments, we demonstrate that when the proposed methods are used with the correct key, identification performance did not degrade. 
+Conversely, when an incorrect key is used, the performance significantly decreased. 
+Particularly, with the use of ROM, we show that even with a relatively small key space, high privacy-preserving performance can be maintained many speech processing tasks. Furthermore, we also demonstrate the difficulty of recovering original speech from encrypted queries in various robustness evaluations.
 
 ## Examples
 ### 1. Encryption of audio signals (when using pytorch's Dataset & Dataloader)
