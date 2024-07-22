@@ -38,6 +38,7 @@ Replace the first convolution layer of the model with an encrypted convolution l
 # when using rawnext model (https://github.com/wngh1187/RawNeXt)
 from secret_key import SecretKey
 from encryption import EncryptedConv1d
+from torch import nn
 
 def encrypt_rawnext_model(rawnext_model: nn.Module, secret_key: SecretKey) -> nn.Module:
     model = copy.deepcopy(rawnext_model)
