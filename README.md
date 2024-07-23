@@ -32,10 +32,10 @@ class AudioDataset(data.Dataset):
 ```
 
 ### 2. Encryption of Audio model
-Replace the first convolution layer of the model with an encrypted convolution layer.
+Replace the first convolution layer of the model with an encrypted convolution layer. The code below is an example of using the rawext model.
+* Ju-ho Kim and Hye-jin Shim and Jungwoo Heo and Ha-Jin Yu, RawNeXt: Speaker verification system for variable-duration utterances with deep layer aggregation and extended dynamic scaling policies, 2021 (https://github.com/wngh1187/RawNeXt)
 
 ```python
-# when using rawnext model (https://github.com/wngh1187/RawNeXt)
 from secret_key import SecretKey
 from encryption import EncryptedConv1d
 from torch import nn
